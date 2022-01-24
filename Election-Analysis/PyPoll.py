@@ -96,7 +96,7 @@ with open(save_output_file, "w") as election_analysis:
             winning_percentage = vote_percentage
             # Set the winning_candidate equal to the candidate_name
             winning_candidate = candidate_name
-#           print(f"{candidate_name} received {votes} votes; {vote_percentage}% of the vote.\n")
+        print(f"{candidate_name} received {votes:,} votes; {vote_percentage}% of the vote.\n")
 
     # Print the winning candidate's results to the terminal
     winning_candidate_summary = (
