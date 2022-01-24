@@ -1,0 +1,25 @@
+
+Election Results
+-------------------------
+Total Votes: 505,062
+-------------------------
+
+County Total Votes: 
+Jefferson: 7.7%, (38,855)
+Denver: 87.4%, (441,406)
+Arapahoe: 4.9%, (24,801)
+-------------------------
+Largest County Turnout: Denver
+Largest County Vote Count: 441,406
+Largest County Percentage: 87.4%
+-------------------------
+Charles Casper Stockham: 16.9% (85,213)
+Diana DeGette: 54.0% (272,892)
+Raymon Anthony Doane: 2.3% (11,606)
+Shetland Pony: 6.1% (30,602)
+Emden Goose: 20.7% (104,749)
+-------------------------
+Winner: Diana DeGette
+Winning Vote Count: 272,892
+Winning Percentage: 54.0%
+-------------------------
