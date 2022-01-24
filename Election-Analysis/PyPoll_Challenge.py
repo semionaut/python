@@ -37,7 +37,7 @@ with open(load_results_file) as election_data:
 
     # Read and print the header row
     headers = next(read_file)
-    print(f"Headers: {headers}")
+    # print(f"Headers: {headers}")
 
     # For each row in the CSV file.
     for row in read_file:
@@ -68,11 +68,11 @@ with open(load_results_file) as election_data:
         county_names_votes[county_name] += 1
 
 # Print the results of the analysis to the terminal.
-print(f"Candidates: {candidate_options}")
-print(f"Counties: {county_names_list}")
-print(f"Total Votes: {total_votes}")
-print(f"Candidate Votes: {candidate_votes}")
-print(f"County Votes: {county_names_votes}")
+# print(f"Candidates: {candidate_options}")
+# print(f"Counties: {county_names_list}")
+# print(f"Total Votes: {total_votes}")
+# print(f"Candidate Votes: {candidate_votes}")
+# print(f"County Votes: {county_names_votes}")
 
 # Save the results to our text file.
 with open(save_output_file, "w") as election_analysis:
