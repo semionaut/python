@@ -83,7 +83,7 @@ with open(save_output_file, "w") as election_analysis:
         f"-------------------------\n"
         f"Total Votes: {total_votes:,}\n"
         f"-------------------------\n\n"
-        f"County Votes: ")
+        f"County Total Votes: \n")
     print(election_results, end="")
     # Save the final vote count to the text file.
     election_analysis.write(election_results)
