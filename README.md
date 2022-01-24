@@ -20,7 +20,7 @@ Their instructions were to calculate the following:
 * PyPoll.py (initial script)
 * PyPoll_Challenge.py (challenge script)
 * election_analysis.txt (results)
-* terminal_output.png (screenshot)
+* terminal_output.jpg (screenshot)
 
 ## Summary of Election Outcomes
 This analysis revealed the following outcomes:
@@ -53,25 +53,33 @@ The challenge sought to expand on the project specification outlined above by in
 
 The Colorado Independent [Congressional](https://redistricting.colorado.gov/content/congressional-redistricting) and Legislative Redistricting Commissions were established via state amendments in 2018, and carried out a process of [redrawing Colorado's congressional district boundaries that concluded in 2021](https://projects.fivethirtyeight.com/redistricting-2022-maps/colorado/). The appointment of an independent Commission is consquential since Democrats currently control all levels of government in the state and would have been able to draw the maps to their advantage had voters not approved the formation of an independent redistricting commission.
 
+![Colorado Congressional Districts map](https://github.com/semionaut/python/blob/main/Election-Analysis/Resources/Colorado_Congressional_Districts.JPG)
+
 The code we provided to Tom and the Board should be able to analyze any data set following their standard format and return a breakdown of: total votes cast, number of votes and percentage of total votes by county, county with the largest number of votes, number of votes and percentage of total votes by candidate, and determine which candidate won the election, along with their vote count and percentage of total votes.
 
 ## Future Directions
 As future work, we might consider:
 * Looking at voter turnout as a percentage of registered voters for those precincts that were analyzed. As Colorado's largest urban center, one might expect Denver to return the highest number of ballots, but for the sake of accuracy that metrics ought to be expressed as a proportion to eligible voters. In addition, Denver and Arapahoe constitute single-precinct districts (Colorado's 1st and 6th Congressional district respectively) whereas Jefferson is just one of nine precincts that make up the 7th Congressional district, therefore it might be expected that its smaller aggregate turnout is normal relative to the overall size and population of that region.
 * Operations to reorder the county and/or candidate lists in descending order by total votes or vote percentage, rather than the order these entries first appeared in the extract.
-* We also didn't consider candidate selection by district to see where the balance of voters for a particular candidate was distributed. It is often the case that US voters choose a candidate along urban/rural lines and it might be interesting to compare the % of votes by county for each candidate and look for differences between Denver and Arapahoe/Jefferson to see if there are any major trends.\
+* We also didn't consider candidate selection by district to see where the balance of voters for a particular candidate was distributed. It is often the case that US voters choose a candidate along urban/rural lines and it might be interesting to compare the % of votes by county for each candidate and look for differences between Denver and Arapahoe/Jefferson as well as any major trends.
 * Lastly, as these pre-tabulated election results contain a mix of hand-counted, machine-counted, and DRE computer-counted ballots, it would be worthwhile to check and verify for unique ballot IDs in the results, in the event of any miscounting or double-counting of the vote. For this analysis, we assume there is no irregularity in the process but this has presented issues before during very high-profile US elections and there's no reason to assume everything was completely above-board.
 
 ## Challenge Summary
 
-As detailed above, the findings of the election audit successfully summarized the relevant total, county-level, candidate-level, top county, and top candidate data that the Board requested. Moreover, it allows a summary of the data to be rapidly printed to the terminal and also written to an output .txt file.
+As detailed above, the findings of the election audit successfully summarized the relevant total, county-level, candidate-level, top county, and top candidate data that the Board requested. Moreover, it allows a summary of the data to be rapidly printed to the terminal and also written to an output `election_analysis.txt` file.
+
+![election_analsis terminal output](https://github.com/semionaut/python/blob/main/Election-Analysis/Resources/terminal_output.JPG)
 
 The Python script provided to the board here is deliberately flexible in order to be applied to other data the Board may wish to analyze. Two examples below:
 
 - List with more candidates:
 For this example, two more imaginary candidates joined the running, Shetland "Shet" Pony and Emden Goose. This added 135,351 new ballots to the sample. Both candidates ran in Denver only. As you can see in `election_analysis_example1.txt` and the screenshot below, PyPoll seamlessly ingests and reads the new dataset and returns the following result.
 
+![election_analsis terminal output example 1](https://github.com/semionaut/python/blob/main/Election-Analysis/Resources/terminal_output_example1.JPG)
+
 - List with additional counties:
 This time, Shetland and Emden made their push in Broomfield and El Paso. As new counties are added to the dataset they are naturally appended to the list compiled by the script.
+
+![election_analsis terminal output example 2](https://github.com/semionaut/python/blob/main/Election-Analysis/Resources/terminal_output_example2.JPG)
 
 As these two tests show, the script can be applied to any dataset that conforms to the same header rows as the sample data. You can expect it to correctly compute a new largest county or new winner in the same way!
