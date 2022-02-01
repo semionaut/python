@@ -78,7 +78,7 @@ For this example, two more imaginary candidates joined the running, Shetland "Sh
 ![election_analsis terminal output example 1](https://github.com/semionaut/python/blob/main/Election-Analysis/Resources/terminal_output_example1.JPG)
 
 - List with additional counties:
-This time, Shetland and Emden made their push in Broomfield and El Paso. As new counties are added to the dataset they are naturally appended to the list compiled by the script.
+Have a look at the sample data in `election_results_example.csv`. This time, Shetland and Emden made their push in Broomfield and El Paso. As new counties are added to the dataset they are naturally appended to the list compiled by the script.
 
 ![election_analsis terminal output example 2](https://github.com/semionaut/python/blob/main/Election-Analysis/Resources/terminal_output_example2.JPG)
 
